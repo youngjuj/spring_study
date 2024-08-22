@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<!--thymeleaf 템플릿 엔진을 사용하기 위한 추가-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'안녕하세요. ' + ${data}" >안녕하세요. 손님</p>
+<!--th: thymeleaf 사용할 때 필요 괄호 속 data가 controller에서 작성했던 attribute의 data
+    따라서 실제로 구동시킬 때는 data위치에 hello!!가 대입될 예정-->
+</body>
+</html>
